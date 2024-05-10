@@ -1,0 +1,188 @@
+/* #5D001E
+#E3E2DF
+#E3AFBC
+#9A1750
+#cf23cf
+#EE4C7C */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.faqPageheader {
+  /* border: 1px solid black; */
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faqPageheader p {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom-width: 7px;
+  border-bottom-style: solid;
+  padding: 0 0.5rem;
+  border-image: linear-gradient(to right, #ee4c7c, #cf23cf) 1;
+}
+.faqPageheader span {
+  font-size: 1rem;
+  font-weight: 400;
+  word-spacing: 5px;
+  line-height: 22px;
+}
+.faqPageBody {
+  position: relative;
+}
+.FaqContainer {
+  padding: 0rem 7rem;
+}
+.FaqBox {
+  /* border: 1px solid black; */
+  box-shadow: 0 0 10px rgb(228, 228, 228);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  width: 65%;
+  margin: 0.75rem auto;
+  padding-bottom: 0.005rem;
+  /* transition: 0.35s; */
+}
+.FaqBoxQue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.FaqBoxQue p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.FaqBoxAns {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgb(40, 40, 40);
+  margin: 0.5rem 0;
+  word-spacing: 2px;
+  line-height: 20px;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+.FaqBoxQue button {
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.faqContactUsContainer {
+  /* border: 1px solid black; */
+  padding: 2rem 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faqContactUsContainer div {
+  /* border: 1px solid black; */
+  /* width: 50%; */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #ee4c7c;
+  border-radius: 0.25rem;
+}
+.faqContactUsContainer a {
+  font-weight: 400;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 1rem;
+  margin: 0 0.5rem;
+  color: white;
+  background-color: #ee4c7c;
+  padding: 0.9rem 1.5rem;
+}
+.faqContactUsContainer a:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #ee4c7c;
+  border: 1px solid #ee4c7c;
+}
+.faqPageImage {
+  position: absolute;
+  top: 0%;
+  left: 65%;
+  z-index: -1;
+  width: 25rem;
+}
+
+@media (width<=1024px) {
+  .faqPageheader {
+    padding: 2rem 4rem;
+  }
+  .faqPageheader p {
+    font-size: 1.1rem;
+  }
+  .faqPageheader span {
+    font-size: 0.8rem;
+    word-spacing: 0px;
+    line-height: 17px;
+  }
+  .FaqContainer {
+    padding: 0 3rem;
+  }
+  .FaqBox {
+    width: 100%;
+    padding: 0.5rem 0.5rem !important;
+    padding-bottom: 0 !important;
+    margin: 0.5rem 0 !important;
+  }
+  .FaqBoxQue p {
+    font-size: 0.9rem !important;
+  }
+  .faqContactUsContainer {
+    padding: 2rem 0rem;
+  }
+  .faqContactUsContainer div {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (width<=450px) {
+  .faqPageheader {
+    padding: 2rem;
+  }
+  .faqPageheader span {
+    width: 100% !important;
+  }
+  .FaqBox {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .FaqBoxAns {
+    font-size: 0.6rem !important;
+    line-height: 15px;
+  }
+  .FaqBoxQue p {
+    font-size: 0.75rem !important;
+    width: 100%;
+  }
+  .faqContactUsContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .faqContactUsContainer div {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+  .faqContactUsContainer a {
+    padding: 0.5rem;
+    text-align: center;
+  }
+}

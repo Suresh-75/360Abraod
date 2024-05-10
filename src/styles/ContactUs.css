@@ -1,0 +1,72 @@
+/* #5D001E
+#E3E2DF
+#E3AFBC
+#9A1750
+#cf23cf
+#EE4C7C */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.contactUsContainer {
+  /* height: 80vh; */
+  display: grid;
+  column-gap: 2rem;
+  margin: 2rem 10rem;
+  grid-template-columns: 2.5fr 1.5fr;
+}
+.contactFormContainer {
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.contactFormContainer main {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+}
+.contactFormContainer > p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.contactFormContainer textarea {
+  margin: 1rem 0;
+}
+.chooseProgram li {
+  margin: 0.75rem 0;
+  font-size: 1rem;
+}
+
+@media (width<=1024px) {
+  .contactUsContainer {
+    margin: 2rem 7rem;
+  }
+}
+
+@media (width<=768px) {
+  .contactUsContainer {
+    margin: 2rem 5rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .locationsContainer {
+    height: 30rem;
+    padding: 2rem 0;
+  }
+}
+@media (width<=450px) {
+  .contactUsContainer {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .locationsContainer {
+    height: 30rem;
+    padding: 2rem 0;
+  }
+}

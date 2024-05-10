@@ -1,0 +1,282 @@
+/* #5D001E
+#E3E2DF
+#E3AFBC
+#9A1750
+#cf23cf
+#EE4C7C */
+
+.countryPageImageContainer {
+  height: 70vh;
+  position: relative;
+}
+.countryPageBody {
+  width: 100wh;
+}
+.countryPageImageContainer img {
+  z-index: -1;
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: contrast(70%);
+}
+.countryPageContext {
+  padding: 2rem 10rem;
+  padding-top: 0rem;
+  display: flex;
+}
+.countryPageContext div:nth-child(2) {
+  position: relative !important;
+}
+.stickyNavBar {
+  background-color: #ee4c7c;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  position: sticky !important;
+  top: 5% !important;
+}
+.stickyNavBar li {
+  padding: 0.5rem 0;
+  color: white;
+  font-weight: bold;
+  transition: 0.25s;
+}
+.stickyNavBar li:hover {
+  color: black;
+  cursor: pointer;
+}
+.countryPageContext p {
+  margin: 1rem 0;
+  word-spacing: 5px;
+  line-height: 22px;
+  font-size: 0.9rem;
+}
+.countryPageContext h3 {
+  padding: 1.5rem 0;
+  padding-bottom: 0;
+}
+.sideHeader {
+  font-size: 1.75rem;
+  border-bottom-width: 7px;
+  border-bottom-style: solid;
+  width: max-content;
+  border-image: linear-gradient(to right, #ee4c7c, #cf23cf) 1;
+}
+.countryNameContainer {
+  width: 70% !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.countryNameContainer p {
+  text-align: center;
+  font-size: 4rem !important;
+  font-weight: 600;
+  color: white;
+  text-shadow: 5px 5px 50px black;
+}
+.growingDestList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.growingDestList li {
+  list-style-type: decimal-leading-zero;
+  word-spacing: 5px;
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+}
+.scholarshipList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scholarshipList li {
+  list-style-type: disc;
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+}
+.countryPageContext h2 {
+  font-size: 2rem !important;
+}
+
+.universitiesList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.universitiesList img {
+  width: 15rem;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 10rem;
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+  padding-top: 0 !important;
+  height: 80%;
+}
+
+.wrapper > section {
+  display: flex;
+  align-items: center;
+  animation: swipe var(--speed) linear infinite backwards;
+}
+
+.wrapper > section img {
+  max-width: 20rem;
+  /* height: 5rem; */
+  padding: 0 2rem;
+  /* object-fit: cover; */
+}
+.wrapper:has(.uk) {
+  padding: 0;
+}
+img:last-of-type {
+  padding-left: 0;
+}
+
+.ukUl {
+  /* border: 1px solid black; */
+  margin-top: 1rem;
+}
+.ukUl li {
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.ukUl li span,
+.ukWhyStudyUL li span,
+.ukHigherEduUl li span,
+.ukWhyBest > li > span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-right: 0.75rem;
+}
+
+.ukWhyStudyUL,
+.ukHigherEduUl,
+.ukWhyBest {
+  /* border: 1px solid black; */
+  margin: 1.5rem 0;
+}
+.ukWhyStudyUL li,
+.ukHigherEduUl li {
+  /* border: 1px solid black; */
+  padding: 1rem;
+  padding-top: 0;
+  line-height: 25px;
+}
+.ukWhyBest > li {
+  padding: 1rem;
+}
+.ukWhyBest ul > li {
+  list-style-type: disc;
+  /* background-color: red; */
+  margin: 0.5rem 2rem;
+}
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@media (width<=1024px) {
+  .countryPageContext {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column-reverse !important;
+  }
+  .countryPageContext div:nth-child(2),
+  .countryPageContext div:nth-child(1) {
+    width: 100% !important;
+  }
+  .stickyNavBar {
+    flex-direction: row !important;
+  }
+  .stickyNavBar li {
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+  }
+  li {
+    font-size: 0.8rem;
+  }
+  li > span {
+    font-size: 0.8rem !important;
+  }
+  .ukWhyBest ul > li {
+    margin: 0.5rem 0;
+  }
+}
+@media (width<=770px) {
+  .sideHeader {
+    font-size: 1.25rem !important;
+    width: 100% !important;
+  }
+  .growingDestList {
+    margin: 0 !important;
+  }
+}
+@media (width<=450px) {
+  .stickyNavBar {
+    flex-direction: column !important;
+    padding: 0.25rem !important;
+  }
+  .stickyNavBar li {
+    font-size: 0.65rem !important;
+  }
+  .countryNameContainer p {
+    font-size: 3rem !important;
+  }
+  .countryPageContext p {
+    padding: 0 !important;
+    width: 100% !important;
+    font-size: 0.7rem !important;
+    line-height: 17px !important;
+  }
+
+  .growingDestList li,
+  .scholarshipList li {
+    font-size: 0.7rem !important;
+    line-height: 17px !important;
+  }
+  .countryPageContext {
+    padding: 2rem 2.5rem !important;
+  }
+  .countryPageContext h2 {
+    font-size: 1rem !important;
+  }
+  .countryPageContext h3 {
+    font-size: 1rem;
+    padding: 0.5rem 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .sideHeader {
+    text-overflow: ellipsis !important;
+  }
+  .countryPageContext div:nth-child(1) {
+    width: 100% !important;
+  }
+  .sideHeader {
+    font-size: 1rem !important;
+    border-bottom-width: 4px !important;
+  }
+}

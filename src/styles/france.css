@@ -1,0 +1,126 @@
+/* #5D001E
+#E3E2DF
+#E3AFBC
+#9A1750
+#cf23cf
+#EE4C7C */
+
+.countryPageImageContainer {
+  height: 70vh;
+  position: relative;
+}
+.countryPageImageContainer img {
+  z-index: -1;
+  object-position: center;
+  zoom: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: contrast(90%);
+}
+.countryPageContext {
+  padding: 2rem 10rem;
+  padding-top: 0rem;
+  display: flex;
+}
+.stickyNavBar {
+  background-color: #ee4c7c;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* width: 20rem !important; */
+  position: sticky !important;
+  top: 5% !important;
+}
+.stickyNavBar p {
+  color: white;
+  font-weight: bold;
+  transition: 0.25s;
+}
+.stickyNavBar p:hover {
+  color: black;
+  cursor: pointer;
+}
+.countryPageContext p {
+  margin: 1rem 0;
+  word-spacing: 5px;
+  line-height: 22px;
+  font-size: 0.9rem;
+}
+.countryPageContext h3 {
+  padding: 1.5rem 0;
+  padding-bottom: 0;
+}
+.sideHeader {
+  font-size: 1.75rem;
+  border-bottom-width: 7px;
+  border-bottom-style: solid;
+  width: max-content;
+  border-image: linear-gradient(to right, #ee4c7c, #cf23cf) 1;
+}
+.countryNameContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.countryNameContainer p {
+  font-size: 4rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 5px 5px 50px black;
+}
+.growingDestList {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.growingDestList li {
+  list-style-type: decimal-leading-zero;
+  word-spacing: 5px;
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+}
+.scholarshipList {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.scholarshipList li {
+  list-style-type: disc;
+  line-height: 20px;
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.france {
+  width: 15rem;
+}
+
+.studyFranceUL > li {
+  padding: 0.5rem 0;
+  list-style-type: disc;
+  margin: 0.5rem 2rem;
+}
+
+.uniCourFranceUL {
+  /* border: 1px solid black; */
+  /* margin: 1rem 0; */
+}
+.uniCourFranceUL > li {
+  padding: 1rem;
+}
+.uniCourFranceUL ul > li {
+  list-style-type: disc;
+  /* background-color: red; */
+  margin: 0.5rem 2rem;
+}
+.uniCourFranceUL > li > span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-right: 0.75rem;
+}

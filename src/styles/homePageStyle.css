@@ -1,0 +1,1316 @@
+/* #5D001E
+#E3E2DF
+#E3AFBC
+#9A1750
+#cf23cf
+#EE4C7C */
+html,
+body {
+  overflow-x: hidden;
+  padding: 0 !important;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style-type: none;
+}
+.navLogo {
+  font-weight: bolder;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: start;
+  align-items: center;
+}
+.navlogo360 {
+  color: #ee4c7c;
+  font-size: 1.5rem;
+  margin-right: 0.25rem;
+}
+.mainNavBar {
+  padding: 1rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  width: 100%;
+}
+.mainNavBar ul {
+  width: 60%;
+  font-size: 0.85rem;
+  font-weight: 550;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainNavBar ul a.active {
+  color: #ee4c7c;
+}
+
+.mainNavBar li {
+  transition: 0.35s;
+}
+.mainNavBar li:hover {
+  cursor: pointer;
+  color: #ee4c7c;
+}
+.btn,
+.btn-2 {
+  background-color: #ee4c7c;
+  padding: 0.9rem 1.5rem;
+  border-radius: 5rem;
+  color: white;
+  font-weight: bold;
+  transition: 0.35s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  color: white !important;
+  /* background-color: #e3afbc; */
+}
+.btn-2 {
+  padding: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 7px 1px black;
+}
+.btn-2:hover {
+  color: #ee4c7c;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 7px 1px #ee4c7c;
+  box-shadow: none;
+}
+.homePageIntro {
+  height: 70vh;
+}
+.homePageIntroContainer {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 100%;
+  position: relative;
+  transition: 0.35s;
+  /* border: 1px solid black; */
+  /* background-color: red; */
+}
+/* .imageScrollContainer {
+  margin: 1rem 0;
+  margin-bottom: -2rem;
+} */
+.homePageIntroContainerimg {
+  object-position: center;
+  object-fit: cover;
+  filter: contrast(80%);
+  width: 100%;
+  height: 100%;
+  display: block;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition: translate 1500ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.homePageIntroContainerimg:nth-child(1) {
+  object-fit: cover;
+}
+.homePageIntroContainerimg:nth-child(2) {
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+.homePageIntroContainerInfo {
+  /* border: 1px solid black; */
+  width: 70%;
+  height: 55%;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  padding: 2rem;
+  padding-left: 10rem;
+}
+.homePageIntroContainerInfo h1 {
+  width: 100%;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  /* border: 1px solid black; */
+  /* padding: 2rem; */
+  text-align: start;
+  text-shadow: 0 0 10px rgb(97, 97, 97);
+}
+.homePageIntroContainerInfo p {
+  font-weight: 600;
+  /* border: 1px solid black; */
+  text-shadow: 0 0 10px rgb(97, 97, 97);
+  font-size: 1.12rem;
+  width: 55%;
+  text-align: center;
+  text-align: start;
+  margin-bottom: 2rem;
+}
+.homePageIntroContainerInfo span {
+  color: #ee4c7c;
+  text-shadow: none;
+  font-weight: bolder;
+}
+.homePageWhoRWe {
+  /* border: 1px solid black; */
+  height: max-content;
+  text-align: center;
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homePageWhoRWe div {
+  /* border: 1px solid black; */
+  margin: 1.15rem 0;
+}
+.homePageWhoRWe > div > span {
+  font-size: 2rem;
+  font-weight: bold;
+  /* margin: 1rem 0; */
+}
+.homePageExpertise {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80% !important;
+  display: flex;
+  justify-content: space-evenly;
+}
+.homePageExpertise div {
+  border: none;
+  width: 13rem;
+  height: 10rem;
+  box-shadow: 0 0 10px #e3e2df;
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+}
+.countNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  background: linear-gradient(to right, #ee4c7c, #cf23cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contactFormContainer button {
+  cursor: pointer;
+}
+.contactFromHeaderP {
+  background: linear-gradient(to right, #ee4c7c, #cf23cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.homePageExpertise div {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 550;
+  color: #343434;
+}
+.homePageServices {
+  padding: 2rem 13rem;
+  background-color: #f9f9f9;
+}
+.homeServicesPageHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.homeServicesPageHeader p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #ee4c7c, #cf23cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #343434;
+  /* font-weight: bold; */
+}
+.homePageServicesContainer {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.homePageServiceBox {
+  display: flex;
+  justify-content: center;
+}
+.homePageServiceBox div {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.homePageServiceInfo {
+  padding: 2rem auto;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.mirror {
+  padding-left: 4rem;
+}
+.mirror span {
+  width: 90% !important;
+}
+.homePageServiceInfo p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.homePageServiceInfo span {
+  font-size: 1rem;
+  letter-spacing: 0;
+  word-spacing: 5px;
+  font-weight: 500;
+  width: 75%;
+}
+.serviceLearnMoreBtn {
+  /* background-color: #ee4c7c; */
+  border: 1.5px solid #ee4c7c;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  color: #ee4c7c;
+  font-weight: bold;
+  margin: 1rem 0;
+  transition: 0.15s;
+}
+.serviceLearnMoreBtn:hover {
+  background-color: #ee4c7c;
+  color: white;
+}
+.servicesImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicesImageContainer img {
+  width: 25rem;
+  height: 25rem;
+}
+.homePageTestimonails {
+  background-color: #fac8d5;
+  background: linear-gradient(
+    106.5deg,
+    rgba(255, 215, 185, 0.91) 23%,
+    rgba(223, 159, 247, 0.8) 93%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 10rem;
+}
+.homePageTestimonailsHeader {
+  padding: 2rem 4rem;
+  padding-bottom: 0;
+}
+.homePageTestimonailsHeader p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #ee4c7c, #cf23cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.testimonialsMainContainer {
+  display: flex;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.testimonialsMainContainer > div:nth-child(1) img {
+  width: 35rem;
+  height: 35rem;
+}
+.testimonialsMainContainer > div {
+  width: 100%;
+  /* height: 100%; */
+}
+.testimonialsContainer {
+  width: 40rem;
+  height: 100%;
+  display: flex;
+  overflow-x: hidden;
+}
+.testimonial {
+  width: 100%;
+  height: 100%;
+  display: block;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition: translate 500ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  padding: 2rem;
+}
+.homePageCountries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 10rem;
+}
+.CountriesHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: content;
+  width: 70%;
+}
+.CountriesHeader p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.countryFlagsContainer {
+  /* justify-content: space-around; */
+  /* padding: 2rem 10rem; */
+  display: flex;
+  justify-content: space-evenly;
+  row-gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  /* border: 1px solid black; */
+  /* height: 42rem; */
+}
+.countryFlagsContainer div {
+  /* border: 1px solid black; */
+  overflow: hidden;
+  /* width: 10rem; */
+  height: 20rem;
+  margin: 0 1rem;
+  border-radius: 0.35rem;
+  position: relative;
+}
+.countryFlagsContainer div:hover main {
+  height: 9rem;
+  background-color: #ee4c7de2;
+}
+.countryFlagsContainer main {
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;
+  width: 100%;
+  /* opacity: 0.7; */
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #ee4c7d;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+  padding-bottom: 1rem;
+}
+.countryFlagsContainer main p:nth-child(1) {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  /* text-shadow: 0px 0px 5px rgb(0, 0, 0); */
+  margin-bottom: 0.5rem;
+}
+.countryFlagsContainer main p:nth-child(3) {
+  color: rgb(0, 0, 0);
+  padding-top: 0.25rem;
+  width: max-content;
+}
+.countryFlagsContainer main p:nth-child(3):hover {
+  color: white;
+  text-decoration: underline;
+}
+.countryFlagsContainer main span {
+  display: block;
+  font-size: 0.95rem;
+  color: rgb(248, 248, 248);
+  text-shadow: none;
+  font-weight: 500;
+}
+.countryFlagImage {
+  width: 15rem;
+  border-radius: 0.35rem;
+  height: 100%;
+  box-shadow: 0 0 10px rgb(225, 225, 225);
+  transition: 0.35s;
+}
+.countryFlagsContainer div:hover .countryFlagImage {
+  cursor: pointer;
+  scale: 1.1;
+}
+.footer {
+  color: white;
+  background-color: black;
+  display: grid;
+  padding: 0 10rem;
+  padding-bottom: 2rem;
+  grid-template-columns: 2fr 0.75fr 2fr 1fr;
+}
+.footerLogo {
+  padding: 2rem 3rem;
+}
+.footerLogo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ee4c7c;
+  margin: 1.75rem 0;
+}
+.footerLogo p span {
+  color: white;
+}
+.footerLogo > span {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+.navFooter {
+  padding: 2rem 3rem;
+}
+.navFooter p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1.75rem 0;
+  width: max-content;
+  padding: 0.15rem;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(to right, #ee4c7c, #cf23cf) 1;
+  padding-bottom: 0.25rem;
+}
+.navFooter ul {
+  /* border: 1px solid white; */
+  height: 50%;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navFooter ul li {
+  position: relative;
+  width: max-content;
+  color: grey;
+  transition: 0.35s;
+  padding: 0.35rem 0;
+}
+.navFooter ul li:hover {
+  cursor: pointer;
+  color: white;
+}
+.blu::after {
+  color: rgb(47, 193, 255);
+  background-color: rgb(47, 193, 255);
+}
+.location {
+  padding: 2rem 3rem;
+}
+.location p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1.75rem 0;
+  width: max-content;
+  padding: 0.15rem;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(to right, #ee4c7c, #cf23cf) 1;
+  padding-bottom: 0.25rem;
+}
+.location main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+  height: 60%;
+}
+.location main span {
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: grey;
+  transition: 0.35s;
+}
+.location main span:hover {
+  cursor: pointer;
+  color: white;
+}
+.findUsFooter {
+  padding: 2rem 3rem;
+}
+.findUsFooter p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1.75rem 0;
+  padding: 0.15rem;
+  width: max-content;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(to right, #ee4c7c, #cf23cf) 1;
+  padding-bottom: 0.25rem;
+}
+.findUsFooter main {
+  /* width: 150%; */
+  display: flex;
+  justify-content: space-between;
+}
+.mobileNav {
+  display: none;
+}
+.navDrawerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navDrawerLogo p {
+  padding: 2rem 0;
+  padding-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.navDrawerLogo p span {
+  color: #ee4c7c;
+}
+
+.mobileNavCountriesList {
+  /* border: 1px solid black; */
+  height: 100%;
+  margin: 0.3rem auto;
+}
+.mobileNavCountriesList li {
+  color: rgb(77, 77, 77);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.freeServicesSection {
+  height: 80vh;
+  margin: 4rem 10rem;
+  margin-bottom: 0;
+}
+.freeServicesSectionHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.freeServicesSectionHeader p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #ee4c7c, #cf23cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #343434;
+}
+.freeServicesLearnMoreDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.freeLearnMoreBtn {
+  /* border-radius: 1.5rem; */
+  box-shadow: 10px 10px 0 #ee4c7c;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border: 1px solid #ee4c7c;
+  background-color: white;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.freeLearnMoreBtn a {
+  color: #ee4c7c;
+}
+.freeLearnMoreBtn:hover {
+  box-shadow: 0px 0px 0 #ee4c7c;
+}
+.freeServicesSectionContent li {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.75rem 0;
+}
+
+.freeServicesSectionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2rem 0;
+  padding-top: 1rem;
+  position: relative;
+}
+.freeServicesSectionContent p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  padding-top: 0;
+}
+.freeServicesSectionContent ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+}
+.freeServicesSectionContentStar1 {
+  position: absolute;
+  bottom: 0%;
+  left: 12%;
+}
+.freeServicesSectionContentStar2 {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  transform: rotate(25deg);
+}
+
+.whatsAppContactLink {
+  z-index: 1;
+  position: fixed;
+  /* top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  bottom: 2%;
+  right: 1%;
+  padding: 1rem;
+  transition: 0.25s;
+  height: max-content;
+}
+.whatsAppContactLink img {
+  width: 40px;
+  height: 40px;
+  transition: 0.25s;
+  filter: none;
+}
+.whatsAppContactLink img:hover {
+  filter: drop-shadow(2px 2px 5px #6c6c6c);
+  transform: scale(1.1);
+}
+
+.popUpFormContainer {
+  position: fixed;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem 1rem;
+  box-shadow: 0px 0px 10px black;
+  z-index: 1;
+  border: none;
+  border-radius: 0.75rem;
+}
+@media (width<=1340px) {
+  .mainNavBar {
+    padding: 1rem 7rem;
+  }
+  .mainNavBar ul {
+    width: 60%;
+  }
+}
+@media (width<=1024px) {
+  .mainNavBar ul {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+  }
+  .homePageIntroContainerInfo {
+    width: 80%;
+    padding-top: 4rem;
+    padding-left: 7rem;
+  }
+  .homePageIntroContainerInfo h1 {
+    font-size: 2.5rem;
+  }
+  .homePageIntroContainerInfo p {
+    font-size: 1.2rem;
+    width: 65%;
+  }
+  .btn-2 {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+  .homePageWhoRWe {
+    padding: 3rem 7rem;
+  }
+  .homePageWhoRWe > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .homePageWhoRWe > div > span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .homePageExpertise div {
+    font-size: 1.2rem;
+    width: 10rem;
+    height: 8rem;
+  }
+  .countNumber {
+    font-size: 2rem;
+  }
+  .homePageServices {
+    padding: 1rem 7rem;
+  }
+  .homeServicesPageHeader p {
+    font-size: 2rem;
+  }
+  .homePageServiceInfo {
+    padding-left: 1rem !important;
+  }
+  .homePageServiceInfo p {
+    font-size: 1.75rem;
+    width: 100%;
+  }
+  .homePageServiceInfo span {
+    width: 100%;
+  }
+  .servicesImageContainer {
+    width: 50% !important;
+  }
+  .servicesImageContainer img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .homePageServiceBox {
+    margin: 1rem 0;
+  }
+  .homePageTestimonails {
+    padding: 1rem 7rem;
+  }
+  .testimonialsContainer {
+    width: 30rem;
+  }
+  .testimonialsMainContainer > div:nth-child(1) img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .testimonial {
+    overflow-y: hidden;
+    font-size: 1rem;
+    width: 100%;
+  }
+  .homePageCountries {
+    padding: 2rem 3rem;
+  }
+  .countryFlagsContainer div {
+    height: 13rem;
+  }
+  .countryFlagImage {
+    width: 10rem;
+  }
+
+  .footer {
+    padding: 2rem 7rem;
+    grid-template-columns: 3fr 0.75fr 1.5fr 1fr;
+    column-gap: 2rem;
+  }
+  .footerLogo > span {
+    line-height: 10px;
+  }
+  .navFooter,
+  .location,
+  .findUsFooter {
+    padding: 2rem 0;
+  }
+  .location main span {
+    /* line-height: 20px; */
+    margin: 0.25rem 0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    column-gap: 5rem;
+  }
+  .footerLogo {
+    padding: 0;
+  }
+  .navFooter,
+  .location,
+  .findUsFooter {
+    padding: 0;
+  }
+  .findUsFooter main {
+    width: max-content;
+  }
+  .countryFlagsContainer main {
+    padding: 0.25rem 0.5rem;
+    height: 1.75rem;
+  }
+  .countryFlagsContainer main span {
+    font-size: 0.7rem;
+  }
+  .countryFlagsContainer div:hover main {
+    height: 7rem;
+  }
+  .countryFlagsContainer main p:nth-child(1) {
+    padding-bottom: 0;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem !important;
+  }
+  .countryFlagsContainer main p:nth-child(3) {
+    padding-bottom: 0;
+    font-size: 0.7rem !important;
+  }
+  .freeServicesSection {
+    margin: 2rem;
+    /* margin-bottom: 0; */
+    height: max-content;
+    /* border: 1px solid black; */
+  }
+}
+@media (width<=768px) {
+  .homePageIntroContainerInfo {
+    /* border: 1px solid black; */
+    /* height: 90%; */
+    /* width: 50%; */
+    /* margin-bottom: 2rem; */
+    /* margin-left: 2rem; */
+    text-align: center;
+  }
+  .mainNavBar {
+    padding: 1rem 5rem;
+  }
+  .homePageIntroContainerInfo p {
+    /* text-align: center; */
+    font-size: 1rem;
+    /* width: 90%; */
+  }
+  .homePageWhoRWe > div > span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .homePageIntroContainerInfo {
+    width: 80%;
+    padding-top: 2rem;
+    padding-left: 5rem;
+  }
+  .homePageIntroContainerInfo h1 {
+    font-size: 2.3rem;
+  }
+  .homePageIntroContainerInfo p {
+    font-size: 1rem;
+    width: 65%;
+  }
+  .homePageWhoRWe > div > p {
+    font-size: 1rem !important;
+  }
+  .homePageExpertise {
+    width: 85% !important;
+  }
+  .homePageIntroContainerimg:nth-child(1) {
+    object-fit: fill;
+  }
+  .homePageExpertise div {
+    width: 8rem;
+    height: 7rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    padding: 1rem 0.75rem;
+  }
+  .homePageServiceInfo {
+    padding: 0 4rem !important;
+    margin-left: 0;
+    margin: 0 auto;
+    width: 100% !important;
+  }
+  .homePageServiceBox {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 !important;
+  }
+  .homePageServiceBox:nth-child(2) {
+    flex-direction: column;
+  }
+  .testimonialsMainContainer > div:nth-child(1) img {
+    display: none;
+  }
+  .testimonialsMainContainer {
+    width: max-content;
+    height: max-content;
+    margin-bottom: 2rem;
+  }
+  .countryFlagsContainer {
+    /* border: 1px solid black; */
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    column-gap: 5rem;
+  }
+  .footerLogo {
+    padding: 0;
+  }
+  .navFooter,
+  .location,
+  .findUsFooter {
+    padding: 0;
+  }
+  .findUsFooter main {
+    width: max-content;
+  }
+  .CountriesHeader {
+    width: 100%;
+  }
+  .homePageCountries {
+    padding: 2rem 3rem;
+  }
+  .countryFlagsContainer div {
+    height: 12rem;
+  }
+  .countryFlagsContainer main span {
+    font-size: 0.7rem;
+  }
+  .countryFlagsContainer div:hover main {
+    height: 7rem;
+  }
+  .countryFlagsContainer main p:nth-child(1) {
+    padding-bottom: 0;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem !important;
+  }
+  .countryFlagsContainer main p:nth-child(3) {
+    padding-bottom: 0;
+    font-size: 0.7rem !important;
+  }
+  .homePageIntroContainerimg:nth-child(2) {
+    object-fit: fill;
+  }
+  .freeServicesSectionHeader p {
+    font-size: 2rem;
+  }
+  .freeServicesSectionContent li {
+    font-size: 1rem;
+  }
+  .freeServicesSectionContent p {
+    font-size: 1.25rem;
+    padding: 0;
+  }
+  .freeServicesStar1 {
+    font-size: 1rem !important;
+    fill: #f85797 !important;
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+  .freeServicesSectionContentStar1 {
+    top: 95%;
+    left: 5%;
+  }
+  .freeServicesSectionContentStar2 {
+    top: 5%;
+    right: 5%;
+  }
+}
+
+@media (width<=486px) {
+  .btn-2 {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+  }
+  .homePageIntro {
+    height: 75vh;
+  }
+  .mainNavBar {
+    padding: 1rem 3rem;
+  }
+  .homePageIntroContainer {
+    /* height: 50%; */
+    border-radius: 1rem;
+    /* background-color: red; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  .homePageIntro {
+    height: 35vh;
+    padding: 1rem 2rem;
+  }
+  .homePageIntroContainerInfo {
+    padding-left: 2rem;
+    width: 100%;
+  }
+  .homePageIntroContainerInfo h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .homePageIntroContainerInfo p {
+    font-size: 0.55rem;
+    width: 70%;
+    display: none;
+    /* display: none; */
+    margin-bottom: 2rem;
+  }
+  .homePageIntroContainerimg {
+    border-radius: 1rem;
+  }
+  .homePageWhoRWe > div > span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .homePageWhoRWe {
+    padding: 2rem 5rem;
+  }
+  .homePageWhoRWe > div > p {
+    font-size: 0.8rem !important;
+  }
+  .homePageExpertise {
+    width: 85% !important;
+  }
+  .countNumber {
+    font-size: 1.25rem;
+  }
+  .homePageExpertise {
+    width: max-content !important;
+  }
+  .homePageExpertise div {
+    width: 6rem;
+    height: max-content;
+    font-size: 0.7rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+  .homePageServices {
+    padding: 2rem 0;
+  }
+  .servicesImageContainer img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .homePageServiceInfo p {
+    font-size: 1.2rem;
+  }
+  .homePageServiceInfo span {
+    font-size: 0.8rem;
+  }
+  .serviceLearnMoreBtn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+  .homePageTestimonails {
+    padding: 2rem 0rem;
+  }
+  .testimonialsContainer {
+    padding: 0 1.15rem;
+    width: 25rem;
+  }
+  .countryFlagsContainer {
+    width: 150%;
+  }
+  .CountriesHeader p {
+    margin: 0.25rem;
+  }
+  .CountriesHeader span {
+    font-size: 0.7rem;
+  }
+  .homePageCountries {
+    padding: 2rem 5rem;
+  }
+  .countryFlagsContainer div {
+    height: 12rem;
+    gap: 0;
+  }
+  .popUpFormContainer {
+    padding: 1rem 0;
+    width: 80%;
+  }
+  .popUpFormContainer p {
+    font-size: 1.2rem !important;
+  }
+  .freeServicesSectionHeader p {
+    font-size: 1.5rem;
+  }
+  .freeServicesSectionContent li {
+    font-size: 0.8rem;
+  }
+  .freeServicesSectionContent p {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .freeServicesStar1 {
+    font-size: 1rem !important;
+    fill: #f85797 !important;
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+  .freeServicesSectionContentStar1 {
+    top: 95%;
+    left: 5%;
+    display: none;
+  }
+  .freeServicesSectionContentStar2 {
+    top: 5%;
+    right: 5%;
+    display: none;
+  }
+  .freeServicesSectionContent ul {
+    /* border: 1px solid black; */
+    margin: 0 5rem;
+    column-gap: 1rem;
+  }
+}
+@media (width<=406px) {
+  .homePageIntroContainerInfo {
+    width: 100%;
+    margin: 0;
+  }
+  .homePageIntroContainerInfo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    /* border: 1px solid black; */
+  }
+  .homePageIntroContainerInfo p {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .homePageExpertise {
+    width: 100% !important;
+  }
+  .homePageExpertise div {
+    height: max-content;
+    font-size: 0.7rem;
+    margin: 0 0.5rem;
+    padding: 1rem 0.75rem !important;
+  }
+  .homePageServiceInfo p {
+    font-size: 1rem;
+  }
+  .homePageServiceInfo span {
+    font-size: 0.7rem;
+  }
+  .homePageServiceInfo {
+    padding-left: 4rem;
+  }
+  .countNumber {
+    font-size: 1rem;
+  }
+  .homeServicesPageHeader {
+    padding-top: 0;
+  }
+  .homeServicesPageHeader p {
+    font-size: 1.5rem;
+  }
+  .homePageTestimonailsHeader {
+    padding: 0;
+  }
+  .homePageTestimonailsHeader p {
+    font-size: 1.5rem;
+  }
+  .testimonialsContainer {
+    font-size: 1rem;
+  }
+  .testimonial p:nth-child(1) {
+    font-size: 0.9rem !important;
+    word-spacing: 5px !important;
+  }
+  .testimonial p:nth-child(2) {
+    font-size: 0.8rem;
+  }
+  .testimonial p:nth-child(3) {
+    font-size: 0.8rem;
+  }
+
+  .CountriesHeader p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .CountriesHeader span {
+    font-size: 0.8rem;
+  }
+  .homePageCountries {
+    padding: 2rem 4rem;
+  }
+  .countryFlagsContainer div {
+    height: 10rem;
+  }
+  .countryFlagImage {
+    width: 7rem;
+  }
+  .popUpFormContainer {
+    padding: 1rem 0;
+    width: 90%;
+  }
+  .popUpFormContainer p {
+    text-align: center;
+    font-size: 2rem !important;
+    padding-right: 0.25rem;
+  }
+}
+
+@media (width<=420px) {
+  .homePageWhoRWe {
+    height: max-content;
+    padding: 2rem 1rem;
+    padding-top: 1rem;
+  }
+  .homePageWhoRWe > div {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .homePageWhoRWe > div > span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+  }
+  .homePageWhoRWe > div > p {
+    font-size: 0.7rem !important;
+    width: 80% !important;
+  }
+  .homePageCountries {
+    padding: 2rem 2rem;
+    /* border: 1px solid black; */
+  }
+  .countryFlagsContainer {
+    /* border: 1px solid black; */
+    padding: 0 4rem;
+  }
+  .CountriesHeader span {
+    font-size: 0.75rem;
+  }
+  .countryFlagsContainer div {
+    /* height: 8rem; */
+    /* width: 7rem; */
+  }
+  .countryFlagsContainer main {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    padding: 0 0.8rem;
+  }
+  .countryFlagsContainer main {
+    height: 1.3rem;
+  }
+  .countryFlagsContainer div:hover main {
+    height: 7rem;
+  }
+  .countryFlagsContainer main span {
+    font-size: 0.7rem;
+  }
+  .countryFlagsContainer main p:nth-child(1) {
+    font-size: 0.8rem !important;
+    margin: 0.25rem 0;
+  }
+  .countryFlagsContainer main p:nth-child(3) {
+    font-size: 0.6rem !important;
+  }
+}

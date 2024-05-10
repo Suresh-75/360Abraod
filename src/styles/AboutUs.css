@@ -1,0 +1,228 @@
+/* #5D001E
+#E3E2DF
+#E3AFBC
+#9A1750
+#cf23cf
+#EE4C7C */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.AboutUsPageIntro {
+  /* height: 90vh; */
+  /* border: 1px solid black; */
+  padding: 1rem 10rem;
+  padding-bottom: 0;
+  padding-right: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+.AboutUsPageIntro > div > p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem auto;
+  margin-top: 0;
+  padding: 0 0.5rem;
+  width: max-content;
+  border-bottom-width: 7px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(to right, #ee4c7c, #cf23cf) 1;
+}
+.AboutUsPageIntro span {
+  font-size: 1rem;
+  font-weight: 400;
+  word-spacing: 5px;
+  line-height: 22px;
+}
+.aboutPageSubSection {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aboutUsImageContainer img {
+  width: 35rem;
+}
+.aboutUsImageContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.aboutPageSubSection p {
+  margin: 2rem 0;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.aboutPageSubSection span {
+  font-size: 0.9rem;
+  word-spacing: 5px;
+  line-height: 22px;
+}
+.recognitionPage {
+  padding-bottom: 2rem;
+  /* width: 70%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recognitionPageImages {
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.recognitionPage > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.recognitionPage p {
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+.recognitionPageImages img {
+  width: 10rem;
+  margin: 0 1rem;
+}
+.recognitionPageImages img:nth-child(1) {
+  width: 15rem;
+  height: max-content;
+}
+.recognitionPageImages img:nth-child(3) {
+  width: 14rem;
+}
+
+.recognitionPageImages img:nth-child(4) {
+  width: 20rem;
+  height: max-content;
+}
+.recognitionPageImages img:nth-child(6) {
+  width: 15rem;
+}
+@media (width<=1024px) {
+  .AboutUsPageIntro {
+    padding: 1rem 7rem;
+  }
+
+  .aboutPageSubSection {
+    margin: 0;
+    grid-template-columns: 2fr 1fr;
+  }
+  .aboutUsImageContainer img {
+    width: 26rem;
+  }
+  .recognitionPageImages {
+    /* border: 1px solid black; */
+    margin: 0 1rem;
+  }
+  .recognitionPageImages img {
+    width: 9rem;
+    margin-right: 0.25rem;
+  }
+  .recognitionPageImages img:nth-child(1) {
+    width: 9rem;
+  }
+
+  .recognitionPageImages img:nth-child(4) {
+    width: 14rem;
+  }
+}
+@media (width<=768px) {
+  .aboutPageSubSection {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .AboutUsPageIntro {
+    /* -top: 0; */
+    padding: 2rem 5rem;
+  }
+}
+@media (width<=425px) {
+  .AboutUsPageIntro {
+    padding: 2rem 3rem;
+    display: flex;
+  }
+  .homePageWhoRWe {
+    padding: 1rem 0rem;
+  }
+  .homePageExpertise {
+    margin-bottom: 0 !important;
+  }
+  .homePageWhoRWe > div > span {
+    padding: 0rem 2.2rem;
+  }
+  .AboutUsPageIntro > div {
+    width: 100% !important;
+  }
+  .AboutUsPageIntro > div > p {
+    font-size: 1.25rem;
+  }
+  .aboutPageSubSection p,
+  .recognitionPage p {
+    font-size: 1.1rem;
+  }
+  .AboutUsPageIntro span {
+    font-size: 0.8rem;
+    word-spacing: 0;
+    width: 100%;
+  }
+  .aboutUsImageContainer img {
+    width: 20rem;
+  }
+  .recognitionPage {
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 0;
+  }
+  .recognitionPageImages img {
+    width: 7rem;
+    /* margin-right: 0.25rem; */
+  }
+  .recognitionPageImages img:nth-child(1) {
+    width: 8rem;
+  }
+  .recognitionPageImages img:nth-child(4) {
+    width: 8rem;
+  }
+  .recognitionPageImages img:nth-child(3) {
+    width: 8rem;
+  }
+  .recognitionPageImages img:nth-child(6) {
+    width: 8rem;
+  }
+  .recognitionPageImages {
+    gap: 0.25rem;
+  }
+}
+@media (width<=375px) {
+  .recognitionPageImages img {
+    width: 4rem;
+    margin-right: 0.25rem;
+  }
+  .recognitionPageImages img:nth-child(1) {
+    width: 4rem;
+  }
+
+  .recognitionPageImages img:nth-child(4) {
+    width: 5rem;
+  }
+}
