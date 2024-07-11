@@ -1,1 +1,1 @@
-# 360 Abroad Frelance Proejct
+# 360 Abroad Freelance Proejct
